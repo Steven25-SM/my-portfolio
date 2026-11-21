@@ -1,4 +1,6 @@
 import { Metadata } from 'next';
+import { FaWhatsapp } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 import { personalInfo } from '@/lib/data';
 
 export const metadata: Metadata = {
@@ -24,16 +26,18 @@ export default function ContactPage() {
           href={`https://wa.me/${personalInfo.whatsapp}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-slate-800/60 border border-slate-700 rounded-2xl p-6 text-center hover:border-violet-500/60 transition"
+          className="flex flex-col items-center gap-2 bg-slate-800/60 border border-slate-700 rounded-2xl p-6 text-center hover:border-violet-500/60 transition"
         >
-          <p className="text-violet-400 font-semibold mb-1">WhatsApp / Celular</p>
+          <FaWhatsapp className="h-10 w-10 text-[#25D366]" aria-hidden="true" />
+          <p className="text-violet-400 font-semibold">WhatsApp / Celular</p>
           <p className="text-white text-lg">{personalInfo.phone}</p>
         </a>
         <a
           href={`mailto:${personalInfo.email}`}
-          className="bg-slate-800/60 border border-slate-700 rounded-2xl p-6 text-center hover:border-violet-500/60 transition"
+          className="flex flex-col items-center gap-2 bg-slate-800/60 border border-slate-700 rounded-2xl p-6 text-center hover:border-violet-500/60 transition"
         >
-          <p className="text-violet-400 font-semibold mb-1">Correo</p>
+          <MdEmail className="h-10 w-10 text-[#0078D4]" aria-hidden="true" />
+          <p className="text-violet-400 font-semibold">Correo</p>
           <p className="text-white text-lg break-all">{personalInfo.email}</p>
         </a>
       </div>
