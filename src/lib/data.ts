@@ -40,7 +40,7 @@
     whatsapp: '51943897483',
     github: 'https://github.com/Steven25-SM',
     linkedin: 'https://www.linkedin.com/in/stevensalda%C3%B1a/',
-    siteUrl: 'https://tuportafolio.com',
+    siteUrl: 'https://stevensaldana-portfolio.netlify.app',
     avatar: '/avatar.jpg',
     };
 
